@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>In memory of Datchinamurthy</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://apis.google.com/js/api.js"></script>
+    </head>
+    <body>
+        <div id="mainbody">
+            <div id="title" class="flexitems">
+                <h1>In Memory of Datchinamurthy</h1>
+                <p id="subtext">We are  collecting messages for...</p>
+            </div>
+            <div>
+                <div id="formcolumn" class="flexitems">
+                    <!-- <form id="messageform" action="https://sheetdb.io/api/v1/"> -->
+                        <form id="messageform" onsubmit="test()">
+                        <label for="message"><div class="highlight">*</div>Message</label>
+                        <textarea rows="4" cols="50" name="message" form="messageform" required></textarea>
+                        <label for="signature"><div class="highlight">*</div>Sign-off</label>
+                        <textarea rows="4" cols="50" name="signature" form="messageform" required></textarea>
+                        <label for="offers">I would like to offer:&nbsp;<div class="highlight">Optional</div></label>
+                        <select name="offers" id="offers">
+                            <option value="">None</option>
+                            <option value="rigatoni">Rigatoni</option>
+                            <option value="dave">Dave</option>
+                            <option value="pumpernickel">Pumpernickel</option>
+                            <option value="reeses">Reeses</option>
+                        </select>
+                        <label for="contact_type">You can contact me via:&nbsp;<div class="highlight">Optional</div></label>
+                        <select name="contact_type" id="contact_type" form="messageform">
+                            <option value="">None</option>
+                            <option value="Email">Email</option>
+                            <option value="Telegram">Telegram</option>
+                            <option value="Twitter">Twitter</option>
+                        </select>
+                        <input name ="contact_value" type="text"></input>
+                        <input id="submit" type="submit" value="Submit">
+                    </form>
+                    <script src="formscript.js"></script>
+                </div>
+            </div>
+            <div id="gallery">
+                <div id="gallery_title"><h2>&#60;&#60;HEADER&#62;&#62;</h2></div>
+                <div id="gallery_grid">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
